@@ -96,7 +96,7 @@ This project replicates core features of Netflix as a full-stack web application
 ## Contribution and Support
 Welcome contributions. Open issues for bugs or feature requests.
 
-For support or questions, please contact: your_email@example.com
+For support or questions, please contact: surendrap792@gmail.com
 
 ***
 
@@ -104,3 +104,4 @@ For support or questions, please contact: your_email@example.com
 MIT License
 
 ***
+
