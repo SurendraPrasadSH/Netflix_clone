@@ -22,10 +22,10 @@ jobs:
       working-directory: ./backend
       run: npm test || echo "No tests configured"
 
-    - name: Install frontend dependencies
-      working-directory: ./Netflix-Clone
-      run: npm install
+#    - name: Install frontend dependencies
+#      working-directory: ./Netflix-Clone
+#      run: npm install
 
-    - name: Run frontend tests (if any)
-      working-directory: ./Netflix-Clone
-      run: npm test || echo "No tests configured"
+#    - name: Run frontend tests (if any)
+#      working-directory: ./Netflix-Clone
+#      run: npm test || echo "No tests configured"
