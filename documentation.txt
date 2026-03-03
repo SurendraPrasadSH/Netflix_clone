@@ -1,0 +1,17 @@
+stage 1:
+set up GitHub
+connected it t VScode
+
+frontend
+downloaded python
+downloaded node.js
+cloned the Netflix UI from git repo: git clone https://github.com/Susmita-Dey/Netflix-Clone.git
+
+backend
+
+using supabase
+prj name: netflix-clone-db
+pssdwd: 7./pg52EtRZ/hCv
+API url: https://vjidfgmqbdlkknpxozvf.supabase.co
+anon/public key: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZqaWRmZ21xYmRsa2tucHhvenZmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTgyMzA2NDQsImV4cCI6MjA3MzgwNjY0NH0.gMDjBn2x70X5rZ0OJpvZ8tObdJBqLiIy4oJxXPqUjes
+

@@ -64,6 +64,20 @@ This project replicates core features of Netflix as a full-stack web application
    ```bash
    docker build -t netflix-backend .
    docker run -p 3000:3000 netflix-backend
+
+   SIGNUP/LOGIN
+┌─────────────┐     password      ┌──────────────┐    bcrypt hash    ┌──────────────┐
+│   Browser   │ ───────────────▶  │   Backend    │ ────────────────▶ │   Supabase   │
+│             │ ◀─────────────── │   (Express)  │ ◀──────────────── │  auth.users  │
+│ HTTP-only   │   sets cookie     │              │   JWT token       │              │
+│ cookie set  │                   └──────────────┘                   └──────────────┘
+
+EVERY REQUEST AFTER LOGIN
+┌─────────────┐  cookie auto-sent  ┌──────────────┐  verify JWT  ┌──────────────┐
+│   Browser   │ ──────────────────▶│  requireAuth │ ────────────▶│   Supabase   │
+│             │                    │  middleware  │              │              │
+└─────────────┘                    └──────────────┘              └──────────────┘
+
    ```
 
 ### Frontend Setup

@@ -1,0 +1,34 @@
+🤖 A) ML Recommendations (Core Feature)
+Connect your ML model to the GET /recommendations?movieId= endpoint so "More like this" shows real recommendations based on content similarity.
+
+🎬 B) Better Home Page UX
+Hero banner (featured movie at top like real Netflix)
+
+Trailer preview on hover
+
+"Continue Watching" row
+
+Genre filter tabs
+
+🔐 C) User Profiles & Watch History
+Track which movies a user watched
+
+"My List" feature (save movies)
+
+Per-user recommendations
+
+📊 D) Admin Dashboard
+Add/edit/delete movies from a UI
+
+View user stats
+
+🚀 E) CI/CD & Deployment
+Push to GitHub → auto deploy via your existing .github/workflows
+
+Deploy to cloud (AWS/Render/Railway)
+
+🎯 F) TMDB Live Integration
+Use your new TMDB API key to fetch 200+ movies dynamically
+
+Run the seed_movie.js script to populate DB
+

@@ -1,0 +1,109 @@
+RUNNING THE DEVOPS NETFLIX CLONE
+Start Docker Desktop
+
+Open Docker Desktop from the Start menu.
+
+Wait until Docker shows it is running and containers are available.
+
+Open the project in a terminal
+
+Open PowerShell.
+
+Go to the project root (where docker-compose.yml lives):
+
+cd F:\projects\DevOps_Netflix_clone
+
+Start all services with Docker Compose
+
+From the project root:
+
+To build images and start containers (show logs in this terminal):
+
+docker compose up --build
+
+To build and start in the background (no logs in this terminal):
+
+docker compose up --build -d
+
+This command builds or rebuilds images if needed and then starts all services defined in docker-compose.yml.
+
+Check containers are running
+
+In a new PowerShell window:
+
+List running containers:
+
+docker ps
+
+You should see entries for:
+
+Backend container (port mapping like 0.0.0.0:3000->3000)
+
+Frontend container (port mapping like 0.0.0.0:8080->8080)
+
+Open the app in the browser
+
+Frontend:
+
+URL: http://localhost:8080
+
+Backend (optional health check or root route):
+
+URL: http://localhost:3000
+
+Daily workflow when resuming the project
+
+Every time you come back to work on the project:
+
+Start Docker Desktop.
+
+Open PowerShell and go to the project folder:
+
+cd F:\projects\DevOps_Netflix_clone
+
+Start services:
+
+docker compose up
+
+or (to run in background)
+
+docker compose up -d
+
+Open http://localhost:8080 in your browser.
+
+Stopping everything cleanly
+
+If containers are running in the foreground (you see logs in the terminal):
+
+Press Ctrl + C in that terminal to stop them.
+
+If containers are running in the background:
+
+Go to the project root:
+
+cd F:\projects\DevOps_Netflix_clone
+
+Stop and remove containers:
+
+docker compose down
+
+This stops containers and removes the containers, networks, and other resources created by docker compose up, while keeping your images and volumes unless explicitly configured otherwise.
+
+If something breaks (common checks)
+
+If ports are already in use:
+
+Make sure no other app is running on ports 3000 or 8080.
+
+You can stop all project containers with:
+
+cd F:\projects\DevOps_Netflix_clone
+docker compose down
+
+If Docker commands fail:
+
+Confirm Docker Desktop is running.
+
+Then retry:
+
+docker compose up --builds
