@@ -1,1 +1,4 @@
 documentation.txt
+backend\.env
+frontend\.env
+ml-service\.env
